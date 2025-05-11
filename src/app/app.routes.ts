@@ -4,6 +4,7 @@ import { ObservablesComponent } from './observables/observables.component';
 import { ListComponent } from './observables/list/list.component';
 import { FromEventComponent } from './observables/from-event/from-event.component';
 import { IntervalComponent } from './observables/interval/interval.component';
+import { OfFromComponent } from './observables/of-from/of-from.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'promise', pathMatch: 'full' },
@@ -14,7 +15,8 @@ export const routes: Routes = [
     children: [
       { path: '', component: ListComponent },
       { path: 'fromEvent', component: FromEventComponent },
-      { path: 'interval', component: IntervalComponent }
+      { path: 'interval', component: IntervalComponent },
+      { path: 'ofFrom', component: OfFromComponent }
     ],
   },
 ];
