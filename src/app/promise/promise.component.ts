@@ -17,8 +17,6 @@ export class PromiseComponent {
   }
   promiseVal: any;
 
-  
-
   ngOnInit(): void {
     let promiseVal;
     let buyLaptop = new Promise((resolve, reject) => {
