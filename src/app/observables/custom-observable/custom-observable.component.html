@@ -1,1 +1,60 @@
-<p>custom-observable works!</p>
+<div class="my-3 container">
+  <h2>Custom Observable</h2>
+  <br />
+
+  <div class="row g-4">
+    <div class="col-md-6">
+      <strong>Example 01 - Manual</strong>
+      <hr />
+      <ul
+        [ngClass]="
+          techStatus == 'Completed'
+            ? 'complete'
+            : techStatus == 'Error'
+            ? 'error'
+            : ''
+        "
+        class="techlist"
+        id="elContainer"
+      ></ul>
+    </div>
+    <div class="col-md-6">
+      <strong>Example 02 - Custom Interval Observable</strong>
+      <hr />
+      <ul
+        [ngClass]="
+          techStatus2 == 'Completed'
+            ? 'complete'
+            : techStatus2 == 'Error'
+            ? 'error'
+            : ''
+        "
+        class="techlist"
+        id="elContainer2"
+      ></ul>
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-md-12">
+      <strong>Example 03 </strong>
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Random Names: </strong> 'Anant', 'Singh', 'Raghuvanshi',
+        'Anushka', 'Vedant'
+      </p>
+      <hr />
+      <p>Current Name : <strong>{{names}}</strong></p>
+      <span class="badge"
+      [ngClass]="nameStatus == 'Completed'
+            ? 'badge-success text-bg-success'
+            : nameStatus == 'Error'
+            ? 'badge-danger text-bg-danger'
+            : 'badge-primary text-bg-primary'
+        ">{{nameStatus == 'Completed'
+            ? 'Success'
+            : nameStatus == 'Error'
+            ? 'Error'
+            : 'Running'}}</span>
+    </div>
+  </div>
+</div>

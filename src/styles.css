@@ -2,3 +2,35 @@
   padding-left: 24px;
   padding-right: 24px;
 }
+
+ul.techlist{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.techlist li{
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 13px;
+    margin-bottom: 10px;
+}
+
+ul.techlist.error li{
+    color: red;
+    background: #ff000014;
+    border: red;
+}
+
+ul.techlist.complete li{
+    color: red;
+    background: #ff000014;
+    border: red;
+}
+
+ul.techlist.complete li{
+    color: rgb(117, 183, 152.4);
+    background: rgb(117 183 152 / 29%);
+    border: rgb(117 183 152 / 86%);
+}
