@@ -8,6 +8,7 @@ import { OfFromComponent } from './observables/of-from/of-from.component';
 import { ToArrayComponent } from './observables/to-array/to-array.component';
 import { CustomObservableComponent } from './observables/custom-observable/custom-observable.component';
 import { MapComponent } from './observables/map/map.component';
+import { PluckComponent } from './observables/pluck/pluck.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'promise', pathMatch: 'full' },
@@ -22,7 +23,8 @@ export const routes: Routes = [
       { path: 'ofFrom', component: OfFromComponent },
       { path: 'toArray', component: ToArrayComponent },
       { path: 'custom', component: CustomObservableComponent },
-      { path: 'map', component: MapComponent }
+      { path: 'map', component: MapComponent },
+      { path: 'pluck', component: PluckComponent}
     ],
   },
 ];
