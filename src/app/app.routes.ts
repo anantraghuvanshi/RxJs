@@ -7,6 +7,7 @@ import { IntervalComponent } from './observables/interval/interval.component';
 import { OfFromComponent } from './observables/of-from/of-from.component';
 import { ToArrayComponent } from './observables/to-array/to-array.component';
 import { CustomObservableComponent } from './observables/custom-observable/custom-observable.component';
+import { MapComponent } from './observables/map/map.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'promise', pathMatch: 'full' },
@@ -20,7 +21,8 @@ export const routes: Routes = [
       { path: 'interval', component: IntervalComponent },
       { path: 'ofFrom', component: OfFromComponent },
       { path: 'toArray', component: ToArrayComponent },
-      { path: 'custom', component: CustomObservableComponent }
+      { path: 'custom', component: CustomObservableComponent },
+      { path: 'map', component: MapComponent }
     ],
   },
 ];
